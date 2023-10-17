@@ -50,7 +50,7 @@ describe('AuthService', () => {
       });
 
       // htpp config, reemplazamos la respuesta por el mockData
-      const url = `${environment.API_URL}/api/v1/auth/login`
+      const url = `${environment.API_URL}/api/auth/login`
       const req = httpController.expectOne(url);
       req.flush(mockData);
     });
@@ -75,10 +75,10 @@ describe('AuthService', () => {
       });
 
       // htpp config, reemplazamos la respuesta por el mockData
-      const url = `${environment.API_URL}/api/v1/auth/login`
+      const url = `${environment.API_URL}/api/auth/login`
       const req = httpController.expectOne(url);
       req.flush(mockData);
     });
-    
+
   })
 });
