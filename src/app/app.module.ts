@@ -8,12 +8,14 @@ import { PicoPreviewComponent } from './components/pico-preview/pico-preview.com
 import { HTTP_INTERCEPTORS, HttpClientModule } from '@angular/common/http';
 import { ReactiveFormsModule } from '@angular/forms';
 import { TokenInterceptor } from './interceptors/token.interceptor';
+import { PersonComponent } from './components/person/person.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ProductsComponent,
-    PicoPreviewComponent
+    PicoPreviewComponent,
+    PersonComponent
   ],
   imports: [
     BrowserModule,
