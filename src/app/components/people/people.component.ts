@@ -9,5 +9,15 @@ import { Person } from 'src/app/models/person.model';
 export class PeopleComponent {
 
   person: Person = new Person('Name', 'LastName', 30, 80, 1.69);
+  selectedPerson: Person | null = null;
+
+  people: Person[] = [
+    new Person('nicolas', 'molina', 23, 55, 1.59),
+    new Person('valentina', 'molina', 30, 80, 1.69)
+  ]
+
+  choose(person:Person){
+    this.selectedPerson = person;
+  }
 
 }
